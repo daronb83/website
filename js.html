@@ -1,38 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-div {
-    height: 500px;
-    margin-top: 200px;
-    margin-left: 25%;
-    margin-right: 25%;
-    color: white;
-    padding: 20px;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    background-color: teal;
-}
-</style>
-<script>
-  function hoverChange() {
-    document.getElementById("hoverbox").style.backgroundColor="red";
-  }
-  function clickChange() {
-    document.getElementById("hoverbox").style.backgroundColor="blue";
-  }
-  function leaveChange() {
-    document.getElementById("hoverbox").style.backgroundColor="teal";
-  }
-</script>
+  <link rel="stylesheet" type="text/css" href="glass-fox.css"/>
+  <script>
+    function hoverChange() {
+      document.getElementById("hoverbox").style.backgroundColor="red";
+    }
+    function clickChange() {
+      document.getElementById("hoverbox").style.backgroundColor="blue";
+    }
+    function leaveChange() {
+      document.getElementById("hoverbox").style.backgroundColor="teal";
+    }
+    </script>
 </head>
 <body>
 <div id="hoverbox" onmouseout="leaveChange()" onclick="clickChange()" onmouseover="hoverChange()">
   </br></br>
   Hover over this box.</br></br>
   Try Clicking on it.</br></br>
-  Now move your mouse outside of the box.
+  <p>Now move your mouse outside of the box.<p>
 </div>
 </body>
 </html>
