@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    height: 500px;
+    width: 500px;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: powderblue;
+}
+</style>
+<script>
+  function hoverChange() {
+    document.getElementById("hoverbox").style.backgroundColor="red";
+}
+</script>
+</head>
+<body>
+<div id="hoverbox" onmousemove="hoverChange()">Hover over this box.</div>
+</body>
+</html>

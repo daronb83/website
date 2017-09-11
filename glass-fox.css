@@ -1,5 +1,14 @@
 /* glass-fox CSS by Daron Barnes */
 
+.columns {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
 /* Opacity */
 .opacity-max {
   opacity:0.25
@@ -13,28 +22,22 @@
   opacity:0.75
 }
 
-.navbar {
-  ul {
+.navbar ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
       background-color: #333;
-  }
+}
 
-  li {
-      float: left;
-  }
-
-  li a {
+.navbar a {
       display: block;
       color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-  }
+}
 
-  li a:hover {
-      background-color: #111;
-  }
+.navbar a:hover {
+      background-color: #111;  
 }
