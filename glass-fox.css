@@ -1,43 +1,12 @@
-/* glass-fox CSS by Daron Barnes */
-
-.columns {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 40px; /* Firefox */
-    column-gap: 40px;
-}
-
-/* Opacity */
-.opacity-max {
-  opacity:0.25
-}
-
-.opacity-mid {
-  opacity:0.5
-}
-
-.opacity-min {
-  opacity:0.75
-}
-
-.navbar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-}
-
-.navbar a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-}
-
-.navbar a:hover {
-      background-color: #111;  
+div {
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: teal;
 }
