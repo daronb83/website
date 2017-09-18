@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="glass-fox.css"/>
+    <script>
+      var cities = ["Alpine", "Altamont", "Alton", "Salt Lake City", "Provo", "Pleasant Grove"];
+
+      var getCities = function() {
+        var part = document.getElementById("partial").value;
+        var suggestions = document.getElementById("suggestions");
+        var inner = "<ul>";
+
+        console.log("Partial = "+part);
+
+        for(i = 0; i < cities.length; i++) {
+          if(cities[i].startsWith(part)) {
+            inner += "<li>"+cities[i]+"</li>";
+          }
+        }
+
+        inner+="</ul>";
+        console.log("part = "+part);
+
+        suggestions.innerHTML = inner;
+        suggestions.classList.add("left");
+        suggestions.classList.add("font-left");
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="card-3 inline">
+      <h1 class="font-big">Utah Cities</h1>
+      <p class="font-small">
+        Enter City: <input type="text" id="partial" onkeyup="getCities()">
+        <div class="font-small" id="suggestions">Suggested Cities: </div>
+      </p>
+    </div>
+  </body>
+</html>
