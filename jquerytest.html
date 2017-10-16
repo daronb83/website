@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>City Finder</title>
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+</script>
+</head>
+
+<body>
+  <div id="button" style="background-color:red; width:300px">
+    click
+  </div>
+
+  <div id="tag" style="background-color:lightblue; width:300px;";>
+    <br>Hello.<br><br>
+  </div>
+
+<script>
+  $(document).ready(function() {
+    $("#button").on( "click", function(event) {
+        $("#tag").slideUp("slow");
+    });
+  });
+</script>
+
+</body>

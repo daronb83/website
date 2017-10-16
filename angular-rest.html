@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="glassfox.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="arest.js"></script>
+  </head>
+
+  <body ng-app='app' ng-controller='mainCtrl'>
+    <div class='floatBox'>
+      <form ng-submit="famAdd()">
+        <input type="text" ng-model="inputPerson" placeholder="Add Person" />
+        <input type="text" ng-model="inputFather" placeholder="Add Father" />
+        <input type="text" ng-model="inputMother" placeholder="Add Mother" />
+        <button type="submit">Submit</button>
+      </form>
+      <form ng-submit="remove()">
+        <button type="submit">Remove</button>
+      </form>
+      <div ng-repeat='x in famList'>
+        <input type='checkbox' ng-model='x.done' />
+        {{x.person + " " + x.father + " " + x.mother}}
+      </div>
+
+  </body>
+</html>
