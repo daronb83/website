@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>News</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+  <script src="forum.js"></script>
+  <link rel="stylesheet" href="glassfox.css"/>
+</head>
+
+<body ng-app="News" ng-controller="MainCtrl">
+  <div class="floatBox">
+    <h1>{{forumName}}</h1>
+    <br>
+
+    <div ng-repeat="post in posts | orderBy: '-upvotes'" class="post">
+      <h2><span ng-click="upvoted(post)">^ </span>{{post.title}}</h2>
+      <div  class="content">
+        {{post.content}}
+      </div>
+      <span style="text-align:right"> {{post.upvotes}}</span>
+    </div>
+
+    <form ng-submit="addPost()" style="margin-top:40px; margin-left:20px">
+      <input type="text" ng-model="titleForm" placeholder="Title:"></input><br>
+      <textarea rows="4" columns="50" ng-model="contentForm" placeholder="Enter text here:"></textarea><br>
+      <button type="submit">Post</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
