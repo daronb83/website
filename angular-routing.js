@@ -40,7 +40,6 @@ var mainCtrl = newsApp.controller('MainCtrl', [
   'postFactory',
 
   function($scope, postFactory) {
-    $scope.test = 'Hello world!';
     $scope.posts = postFactory.posts;
 
     $scope.addPost = function(){
@@ -50,11 +49,13 @@ var mainCtrl = newsApp.controller('MainCtrl', [
 
       $scope.posts.push({
         title: $scope.formContent,
+        body: $scope.formBody,
         upvotes: 0,
         comments: []
       });
 
       $scope.formContent = '';
+      $scope.formBody = '';
     };
 
     $scope.incrementUpvotes = function(post) {

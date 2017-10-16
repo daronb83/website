@@ -68,10 +68,6 @@ a:link { color: #97B2C3; text-decoration: none; }
 a:hover { color: #81A2B6; text-decoration: underline; }
 a:visited { color: #878C98; text-decoration: none; }
 
-input {
-  font-size: 1em;
-  padding: .5em;
-  margin: .5em;
 
 /* Forms and Input */
 form {
@@ -91,7 +87,6 @@ input {
 }
 
 textarea {
-  margin: .5em;
   height: 6em;
   width: 70%;
   padding: .5em;
@@ -107,7 +102,6 @@ button {
   display: inline-block;
   vertical-align: middle;
   padding: .75em 1em;
-  margin: .5em;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
